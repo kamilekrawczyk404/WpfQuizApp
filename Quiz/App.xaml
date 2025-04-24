@@ -10,6 +10,9 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Theme/MenuButtonTheme.xaml"/>
+                <ResourceDictionary Source="Theme/FormButtonTheme.xaml"/>
+                <ResourceDictionary Source="Theme/InputTheme.xaml"/>
+                <ResourceDictionary Source="/Theme/InputLabelTheme.xaml"/>
             </ResourceDictionary.MergedDictionaries>
             <DataTemplate DataType="{x:Type viewModel:GeneratorViewModel}">
                 <view:GeneratorView/>

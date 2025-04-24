@@ -10,7 +10,7 @@ namespace Quiz.ViewModel
     {
         public GeneratorViewModel()
         {
-
+            
         }
     }
 }

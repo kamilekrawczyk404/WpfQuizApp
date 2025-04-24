@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Quiz.Core;
@@ -13,6 +15,7 @@ namespace Quiz.ViewModel
         public RelayCommand QuizViewCommand { get; set; }
         public GeneratorViewModel GeneratorVM{ get; set; }
         public QuizViewModel QuizVM{ get; set; }
+
         private object _currentView;
 
         public object CurrentView
