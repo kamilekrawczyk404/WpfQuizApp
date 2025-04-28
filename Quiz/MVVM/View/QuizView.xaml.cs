@@ -18,9 +18,9 @@ namespace Quiz.View
     /// <summary>
     /// Logika interakcji dla klasy QuizzView.xaml
     /// </summary>
-    public partial class QuizzView : UserControl
+    public partial class QuizView : UserControl
     {
-        public QuizzView()
+        public QuizView()
         {
             InitializeComponent();
         }

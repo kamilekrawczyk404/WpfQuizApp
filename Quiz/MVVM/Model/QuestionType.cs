@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Quiz.Core;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,7 @@ namespace Quiz.Model
 {
     public enum QuestionType
     {
-        MultipleChoice,
-        SingleChoice
+        SingleCorrect,
+        MultipleCorrect
     }
 }

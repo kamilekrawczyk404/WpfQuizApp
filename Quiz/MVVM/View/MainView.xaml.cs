@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Quiz.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,11 +17,11 @@ using System.Windows.Shapes;
 namespace Quiz.View
 {
     /// <summary>
-    /// Logika interakcji dla klasy GeneratorView.xaml
+    /// Logika interakcji dla klasy MainView.xaml
     /// </summary>
-    public partial class GeneratorView : UserControl
+    public partial class MainView : UserControl
     {
-        public GeneratorView()
+        public MainView()
         {
             InitializeComponent();
         }

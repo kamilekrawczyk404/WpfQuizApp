@@ -4,13 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Quiz.ViewModel
+namespace Quiz.Core
 {
-    class GeneratorViewModel
+    public abstract class ViewModel : ObservableObject
     {
-        public GeneratorViewModel()
-        {
-            
-        }
     }
 }

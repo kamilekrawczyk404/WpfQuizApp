@@ -4,26 +4,30 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type TextBox}">
-                    <Border CornerRadius="12" Background="#E5E4E2">
+                    <Border CornerRadius="12"
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}">
                         <Grid>
-                            <Rectangle StrokeThickness="1"/>
-                            <TextBox BorderThickness="0" Background="Transparent" VerticalContentAlignment="Center" Padding="10,5,10,5" Foreground="#36454F" x:Name="Input"/>
-                            <TextBlock IsHitTestVisible="False" Text="{TemplateBinding Property=Text}" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Foreground="#A9A9A9" FontSize="12">
-                                <TextBlock.Style>
-                                    <Style TargetType="{x:Type TextBlock}">
-                                        <Style.Triggers>
-                                            <DataTrigger Binding="{Binding Text, ElementName=Input}" Value="">
-                                                <Setter Property="Visibility" Value="Visible"/>
-                                            </DataTrigger>
-                                        </Style.Triggers>
-                                        <Setter Property="Visibility" Value="Hidden"/>
-                                    </Style>
-                                </TextBlock.Style>
-                            </TextBlock>
+                            <ScrollViewer x:Name="PART_ContentHost"
+                                          BorderThickness="0" Background="Transparent"
+                                          VerticalAlignment="Center"
+                                          Padding="{TemplateBinding Padding}"
+                                          Foreground="{TemplateBinding Foreground}"/>
                         </Grid>
                     </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsFocused" Value="True">
+                            <Setter Property="BorderBrush" Value="#303030" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
+        <Setter Property="Background" Value="LightGray"/>
+        <Setter Property="BorderBrush" Value="Gray"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Padding" Value="10,5,10,5"/>
+        <Setter Property="Foreground" Value="#303030"/>
     </Style>
 </ResourceDictionary>

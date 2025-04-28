@@ -11,19 +11,20 @@
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
-            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Background" Value="Gray"/>
             <Setter Property="BorderThickness" Value="0"/>
             <Setter Property="Height" Value="50"/>
             <Setter Property="FontSize" Value="18"/>
             <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Foreground" Value="LightGray"/>
             <Setter Property="Margin" Value="0,0,0,10"/>
         </Style.Setters>
         <Style.Triggers>
             <Trigger Property="IsChecked" Value="True">
-                <Setter Property="Background" Value="#C0C0C0"/>
+                <Setter Property="Background" Value="#505050"/>
             </Trigger>
             <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="#C0C0C0"/>
+                <Setter Property="Background" Value="#505050"/>
             </Trigger>
         </Style.Triggers>
     </Style>

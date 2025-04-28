@@ -2,6 +2,6 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <Style TargetType="{x:Type TextBlock}" x:Key="InputLabel">
         <Setter Property="Margin" Value="0,0,0,2"/>
-        <Setter Property="Foreground" Value="#36454F"/>
+        <Setter Property="Foreground" Value="#303030"/>
     </Style>    
 </ResourceDictionary>

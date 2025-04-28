@@ -6,21 +6,27 @@
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
                         <Border CornerRadius="12" HorizontalAlignment="Left" Background="{TemplateBinding Background}" BorderThickness="{TemplateBinding BorderThickness}" BorderBrush="{TemplateBinding BorderBrush}">
-                            <TextBlock FontSize="12" Foreground="#36454F" Text="{TemplateBinding Property=Content}" VerticalAlignment="Center" Padding="10,5,10,5" TextDecorations="{TemplateBinding TextBlock.TextDecorations}"/>
+                            <TextBlock FontSize="12" Foreground="LightGray" Text="{TemplateBinding Property=Content}" VerticalAlignment="Center" Padding="10,5,10,5" TextDecorations="{TemplateBinding TextBlock.TextDecorations}"/>
                         </Border>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
-            <Setter Property="Background" Value="#E5E4E2"/>
-            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="Background" Value="#505050"/>
+            <Setter Property="BorderBrush" Value="#303030"/>
             <Setter Property="BorderThickness" Value="1"/>
             <Setter Property="TextBlock.TextDecorations" Value="None"/>
         </Style.Setters>
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="#D3D3D3"/>
+                <Setter Property="Background" Value="#303030"/>
                 <Setter Property="TextBlock.TextDecorations" Value="Underline"/>
-                <Setter Property="BorderBrush" Value="#36454F"/>
+                <Setter Property="BorderBrush" Value="#080808"/>
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Background" Value="Gray"/>
+                <Setter Property="Foreground" Value="DarkGray"/>
+                <Setter Property="Cursor" Value="Arrow"/>
+                <Setter Property="Opacity" Value="0.75"/>
             </Trigger>
         </Style.Triggers>
         

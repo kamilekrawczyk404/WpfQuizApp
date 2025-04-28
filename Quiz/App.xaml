@@ -4,21 +4,26 @@
              xmlns:local="clr-namespace:Quiz"
              xmlns:viewModel="clr-namespace:Quiz.ViewModel"
              xmlns:view="clr-namespace:Quiz.View"
-             StartupUri="MainWindow.xaml"
              >
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Theme/MenuButtonTheme.xaml"/>
-                <ResourceDictionary Source="Theme/FormButtonTheme.xaml"/>
-                <ResourceDictionary Source="Theme/InputTheme.xaml"/>
+                <ResourceDictionary Source="/Theme/MenuButtonTheme.xaml"/>
+                <ResourceDictionary Source="/Theme/FormButtonTheme.xaml"/>
+                <ResourceDictionary Source="/Theme/InputTheme.xaml"/>
                 <ResourceDictionary Source="/Theme/InputLabelTheme.xaml"/>
+                <ResourceDictionary Source="/Theme/RoundedComboBoxTheme.xaml"/>
+                <ResourceDictionary Source="/Theme/ListBoxCustomTheme.xaml"/>
             </ResourceDictionary.MergedDictionaries>
+
             <DataTemplate DataType="{x:Type viewModel:GeneratorViewModel}">
                 <view:GeneratorView/>
             </DataTemplate>
             <DataTemplate DataType="{x:Type viewModel:QuizViewModel}">
-                <view:QuizzView/>
+                <view:QuizView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:EditQuestionViewModel}">
+                <view:EditQuestionView/>
             </DataTemplate>
         </ResourceDictionary>
     </Application.Resources>
